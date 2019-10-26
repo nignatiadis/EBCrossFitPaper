@@ -164,6 +164,12 @@ git-tree-sha1 = "674b67f344687a88310213ddfa8a2b3c76cc4252"
 uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
 version = "1.1.0"
 
+[[DataDeps]]
+deps = ["HTTP", "Reexport", "SHA"]
+git-tree-sha1 = "3b07400b34d0a993d13370a179877cfd218d1d17"
+uuid = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
+version = "0.7.0"
+
 [[DataFrames]]
 deps = ["CategoricalArrays", "Compat", "DataAPI", "InvertedIndices", "IteratorInterfaceExtensions", "Missings", "PooledArrays", "Printf", "REPL", "Reexport", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
 git-tree-sha1 = "271528230c65a4517522e2968c3deed76b92b998"
@@ -249,11 +255,11 @@ version = "0.9.13"
 
 [[EBayes]]
 deps = ["Distributions", "MLDataPattern", "MLJ", "MLJBase", "NLSolversBase", "Optim", "Reexport", "Statistics", "StatsBase", "StructArrays"]
-git-tree-sha1 = "99e5479a899cd9d3c7fc3ff49fa5f84ddb04e561"
-repo-rev = "8b005e7da2e5b5e6d052185f544cd497a305dd6b"
+git-tree-sha1 = "020196b9616f98dcfa1d4149659c41ce0d4772e0"
+repo-rev = "d0a3f00989d217a8c7219e25fce4dffc7eb2e045"
 repo-url = "https://github.com/nignatiadis/EBayes.jl"
 uuid = "bad9efff-1a8e-41fb-9e7d-5d6f530fb0a3"
-version = "0.1.2"
+version = "0.1.0"
 
 [[FFMPEG]]
 deps = ["BinaryProvider", "Libdl"]
@@ -342,6 +348,12 @@ git-tree-sha1 = "e3ead4211073d4117a0d2ef7d1efc5c8092c8412"
 uuid = "a2bd30eb-e257-5431-a919-1863eab51364"
 version = "0.4.0"
 
+[[HTTP]]
+deps = ["Base64", "Dates", "IniFile", "MbedTLS", "Sockets"]
+git-tree-sha1 = "f1e1b417a34cf73a70cbed919915bf8f8bad1806"
+uuid = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+version = "0.8.6"
+
 [[IdentityRanges]]
 deps = ["OffsetArrays", "Test"]
 git-tree-sha1 = "b8c36c6083fd14e2a82c5974225702126e894f23"
@@ -420,6 +432,12 @@ git-tree-sha1 = "b6e249be10a3381b2c72ac82f2d13d70067cb2bd"
 uuid = "9b13fd28-a010-5f03-acff-a1bbcff69959"
 version = "0.5.0"
 
+[[IniFile]]
+deps = ["Test"]
+git-tree-sha1 = "098e4d2c533924c921f9f9847274f2ad89e018b8"
+uuid = "83e8ac13-25f8-5344-8a64-a9f2b223428f"
+version = "0.5.0"
+
 [[InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
@@ -446,6 +464,12 @@ version = "1.0.0"
 git-tree-sha1 = "2ebe60d7343962966d1779a74a760f13217a6901"
 uuid = "c8e1da08-722c-5040-9ed9-7db0dc04731e"
 version = "1.2.0"
+
+[[IterableTables]]
+deps = ["DataValues", "IteratorInterfaceExtensions", "Requires", "TableTraits", "TableTraitsUtils", "Test"]
+git-tree-sha1 = "18d6084924b2ac78deb65229cbcaa04d56ecb075"
+uuid = "1c8ee90f-4401-5389-894e-7a04a3dc0f4d"
+version = "0.11.0"
 
 [[IteratorInterfaceExtensions]]
 git-tree-sha1 = "a3f24677c21f5bbe9d2a714f95dcd58337fb2856"
@@ -497,6 +521,12 @@ version = "7.0.1"
 [[LinearAlgebra]]
 deps = ["Libdl"]
 uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
+[[Loess]]
+deps = ["Distances", "Random", "Statistics", "Test"]
+git-tree-sha1 = "0ee46caf683a422b595be4dfaed6cda28f541e25"
+uuid = "4345ca2d-374a-55d4-8d30-97f9976e7612"
+version = "0.5.0"
 
 [[Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
@@ -551,6 +581,12 @@ version = "0.2.2"
 [[Markdown]]
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
+
+[[MbedTLS]]
+deps = ["BinaryProvider", "Dates", "Libdl", "Random", "Sockets"]
+git-tree-sha1 = "85f5947b53c8cfd53ccfa3f4abae31faa22c2181"
+uuid = "739be429-bea8-5141-9913-cc70e7f3736d"
+version = "0.7.0"
 
 [[Measures]]
 deps = ["Test"]
@@ -727,6 +763,18 @@ git-tree-sha1 = "7a11344be0bd27a98ce3038573c4df518f051a8f"
 uuid = "be4d8f0f-7fa4-5f49-b795-2f01399ab2dd"
 version = "0.5.2"
 
+[[Query]]
+deps = ["DataValues", "IterableTables", "MacroTools", "QueryOperators", "Statistics"]
+git-tree-sha1 = "fd506b7101702daa4fb13cdffca771180d16c19c"
+uuid = "1a8c2f83-1ff3-5112-b086-8aa67b057ba1"
+version = "0.12.2"
+
+[[QueryOperators]]
+deps = ["DataStructures", "DataValues", "IteratorInterfaceExtensions", "TableShowUtils"]
+git-tree-sha1 = "7ffa41275edd6e0374a9ae8e3b048840867a06d9"
+uuid = "2aef5ad7-51ca-5a8f-8e88-e75cf067b44b"
+version = "0.9.1"
+
 [[REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets"]
 uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
@@ -860,6 +908,12 @@ deps = ["LinearAlgebra", "Test"]
 git-tree-sha1 = "2039aaa96f7b21634a1b3246cb2699dd1d26d473"
 uuid = "7522ee7d-7047-56d0-94d9-4bc626e7058d"
 version = "0.2.0"
+
+[[TableShowUtils]]
+deps = ["DataValues", "Dates", "JSON", "Markdown", "Test"]
+git-tree-sha1 = "14c54e1e96431fb87f0d2f5983f090f1b9d06457"
+uuid = "5e66a065-1f0a-5976-b372-e0b8c017ca10"
+version = "0.2.5"
 
 [[TableTraits]]
 deps = ["IteratorInterfaceExtensions"]
