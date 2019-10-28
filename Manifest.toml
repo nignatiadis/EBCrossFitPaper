@@ -275,8 +275,8 @@ version = "0.1.0"
 
 [[EBayesDatasets]]
 deps = ["CSV", "CategoricalArrays", "DataDeps", "DataFrames", "Dates", "EBayes", "GroupLens", "IterTools", "JuliaDB", "MLDataPattern", "Query", "Random", "Revise", "StatsBase"]
-git-tree-sha1 = "54152d74647e9400fce3cacb2f0dd3bbc4067e53"
-repo-rev = "75bf9130192941735a5773cc33798a5f54483f52"
+git-tree-sha1 = "cef799fbbe1c92b10ab08fb6843772f1fe5e3236"
+repo-rev = "e9f553f86c6fa84e7762f76e3ed46a6ebe26fd1f"
 repo-url = "https://github.com/nignatiadis/EBayesDatasets.jl"
 uuid = "030c8bae-559e-11e9-37f6-d9ac2af9a810"
 version = "0.1.0"
